@@ -19,12 +19,12 @@
   }
   
   .about-us {
-    background-image: url('./assets/machinepro.png');
+    background-image: url('./assets/background_for_content.PNG');
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     color: #fff;
-    font-size: 100px;
+    font-size: 20px;
   }
   
   .registration {
@@ -37,12 +37,18 @@
   }
   
   .alumnae {
-    background-image: url('./assets/machinepro.png');
+    /*background-image: url('./assets/machinepro.png');*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: black;
     font-size: 100px;
+    /*background-color: grey;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;*/
   }
 
   .news {

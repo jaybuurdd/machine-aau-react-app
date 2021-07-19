@@ -32,7 +32,7 @@ function NavBar() {
         <nav className='navbar'>
            <div className="navbar-container">
               <Link to="/" className="navbar-logo" onClick = {closeMobileMenu}>
-                  MACHINE <i className='fas fa-basketball-ball' />
+              <img width="auto" height="53px" className="navbar-logo" src="/images/machinepro.png"  alt="logo" />
               </Link>
               <div className='menu-icon' onClick={handleClick}>
                   <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -44,21 +44,17 @@ function NavBar() {
                       </Link>
                   </li>
                   <li className='nav-item'>
-                      <Link to='/about-us' className='nav-links' onClick={closeMobileMenu}>
-                          About Us
+                      <Link to='/usjn' className='nav-links' onClick={closeMobileMenu}>
+                          USJN
                       </Link>
-                  </li>
+                  </li>  
                   <li className='nav-item'>
-                      <Link to='/registration' className='nav-links-mobile' onClick={closeMobileMenu}>
-                          Registration
-                      </Link>
-                      <li className='nav-item'>
                       <Link to='/alumnae' className='nav-links' onClick={closeMobileMenu}>
                           Alumnae
                       </Link>
-                  </li> 
+                  </li>  
                   <li className='nav-item'>
-                      <Link to='/news' className='nav-links' onClick={closeMobileMenu}>
+                      <Link to='/alumnae' className='nav-links' onClick={closeMobileMenu}>
                           News
                       </Link>
                   </li>  
@@ -67,9 +63,9 @@ function NavBar() {
                           Contact TheMACHINE
                       </Link>
                   </li> 
-                  </li>
+                  
               </ul>
-              {button && <Button buttonStyle='btn--outline'>REGISTER</Button>}
+            
            </div>
         </nav>
        </>
