@@ -5,7 +5,11 @@ import './App.css';
 import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
 import Alumnae from './components/pages/Alumnae';
-
+import USJN from './components/pages/USJN';
+import Sponsors from './components/pages/Sponsors';
+import PrivacyPolicy from './components/pages/PrivacyPolicy';
+import TermsOfService from './components/pages/TermsOfService';
+import Disclaimer from './components/pages/Disclaimer';
 
 function App() {
   return (
@@ -15,7 +19,11 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/about-us' component={AboutUs} />
-          <Route path='/alumnae' component={Alumnae} />
+          <Route path='/usjn' component={USJN} />
+          <Route path='/sponsors' component={Sponsors} />
+          <Route path='/privacy-policy' component={PrivacyPolicy} />
+          <Route path='/terms-of-service' component={TermsOfService} />
+          <Route path='/disclaimer' component={Disclaimer} />
         </Switch>
       </Router>
     </>  

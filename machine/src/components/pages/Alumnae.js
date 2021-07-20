@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../App.css';
-import PlayerCards from '../PlayerCards';
+import AlumPlayerCards from '../AlumPlayerCards';
 import Footer from '../Footer';
 
 
 function Alumnae() {
   return (
     <>
-      <PlayerCards />
+      <AlumPlayerCards />
       <Footer />
     </>
   );

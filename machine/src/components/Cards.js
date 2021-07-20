@@ -18,12 +18,6 @@ function Cards() {
               label='MACHINE @ USJN'
               path='/usjn'
             />
-             <CardItem
-              src='images/background_for_content.png'
-              text='Get the latest on the MACHINE Teams!'
-              label='NEWS'
-              path='/news'
-            />
           </ul>
         </div>
       </div>
