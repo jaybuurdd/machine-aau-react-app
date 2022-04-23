@@ -7,7 +7,7 @@ export const Nav = styled.div`
     top: 0px;
     width: 100%;
     background: white;
-    height: 40px;
+    height: 64px;
     display: block;
     justify-content: space-between;
     padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -16,10 +16,10 @@ export const Nav = styled.div`
 
 export const Nav2 = styled.div`
     position: fixed;
-    top: 60px;
+    top: 64px;
     width: 100%;
     background: lightgrey;
-    height: 90px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vw - 1000px) / 3.25);
@@ -27,14 +27,14 @@ export const Nav2 = styled.div`
 `;
 
 export const Foot = styled.div`
-    position: relative;
-    top: 60px;
-    width: 100%;
+    //position: relative;
+    //top: 60px;
+    //width: 100%;
     background: #0404d4;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1000px) / 3.25);
+    height: 100px;
+    display: block;
+    //justify-content: space-between;
+    padding: 0.75rem calc((100vw - 1000px) / 5.25);
     zindex: 1000;
 `;
 
@@ -141,6 +141,22 @@ export const NavMenu2= styled.ul`
     }
 `;
 
+export const NavMenu3= styled.ul`
+    list-style: none;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    left: 5%;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin-right: 0rem;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
 export const NavItem= styled.li`
     position: relative;
     display: inline-block;
@@ -312,3 +328,22 @@ export const NavBtnLink2 = styled(Link)`
     }
 `;
 
+export const NavBtnLink3 = styled(Link)`
+    border--radius: 2px;
+    background: #fff;
+    padding: 2px 8px;
+    font-family: 'Plaster', cursive;
+    font-size: 14px;
+    color: #b80320;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    
+    &:hover {
+        // transition: all 0.2s ease-in-out;
+        background: #b80320;
+        color: #fff;
+    }
+`;

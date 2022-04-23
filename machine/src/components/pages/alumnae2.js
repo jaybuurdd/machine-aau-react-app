@@ -22,7 +22,6 @@ const AlumStyle = {
 
 
 const CardGrid = {
-    //minHeight: '100vh',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr 1fr',
     gridGap: '10px',
@@ -33,7 +32,6 @@ const CardGrid = {
     margin: '0',
     padding: '0',
     boxSizing: 'border-box',
-    zindex: 0,
   };
 
 

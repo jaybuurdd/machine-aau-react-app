@@ -111,14 +111,15 @@ export const MACHINEH3C = styled.span`
 
 
 export const MACHINEMain = styled.div`
+    //position: relative;
     top: 190px;
-    margin: 200px;
+    margin: 150px;
     color: #0404d4;
     align-items: center;
     font-family: 'Sriracha', cursive;
     font-size: 20px;
     text-decoration:
-    zindex: 4200;
+    //zindex: -200;
 
     @media screen and (max-width: 768px) {
         display: none;

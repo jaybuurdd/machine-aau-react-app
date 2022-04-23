@@ -2,7 +2,6 @@ import React from 'react';
 import Box from '@material-ui/core/Box';
 
 import '../../App.css';
-import AlumnaeCards from '../AlumnaeCards';
 import Footer from '../Footer';
 import Slideshow from '../Slideshow/Slideshow';
 import MachineSection from '../MachineSection';
@@ -32,7 +31,6 @@ function Home() {
           ]}
         />
         </Box>
-      <AlumnaeCards />
     </>
   );
 }

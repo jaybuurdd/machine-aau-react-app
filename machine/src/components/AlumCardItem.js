@@ -14,8 +14,7 @@ const AlumCardContent = {
 };
 
 const AlumCard = {
-  position: 'relative',
-  background: '#fff',
+  background: '#c3d8e0',
   maxWidth: '325px',
   width: '325px',
   height: 'auto',
@@ -23,26 +22,26 @@ const AlumCard = {
   boxShadow: '10px 25px 25px rgb(1 1 1 / 20%)',
   borderRadius: '10px',
   overflow: 'hidden',
-  zindex: 0,
+  zindex: '0',
 };
 
 const AlumDiv = {
   maxHeight: '360px',
-  zindex: 0,
+  zindex: '0',
 };
 
 const AlumImg = {
   width: '280px',
   height: '340px',
   margin: '20px',
-  zindex: 0,
+  zindex: '0',
 };
 
 const AlumInfo = {
-  position: 'relative',
   //padding: '0px 20px 0px',
   justifyContent: 'center',
   alignItems: 'center',
+  zindex: '0',
 };
 
 
