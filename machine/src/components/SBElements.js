@@ -4,25 +4,25 @@ import {FaBars} from 'react-icons/fa';
 
 export const Nav = styled.div`
     position: fixed;
-    top: 0px;
+    top: 0vw;
     width: 100%;
     background: white;
-    height: 40px;
-    display: block;
+    height: 4.8vw;
+    display: flex;
     justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1000px) / 2);
+    //padding: 0.5rem calc((100vw - 1000px) / 2);
     zindex: 1100;
 `;
 
 export const Nav2 = styled.div`
     position: fixed;
-    top: 60px;
+    top: 4.85vw;
     width: 100%;
     background: lightgrey;
-    height: 90px;
+    height: 5.6vw;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1000px) / 3.25);
+    //padding: 0.5rem calc((100vw - 1000px) / 3.25);
     zindex: 1000;
 `;
 
@@ -45,9 +45,10 @@ export const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     font-family: 'Sriracha', cursive;
-    font-size: 18px;
+    //font-size: 18px;
+    font-size: 1.25vw;
     text-decoration: none;
-    padding: 0.25rem 1.25rem;
+    padding: 0vw 0.51vw;
     height: 100%;
     border-radius: 50%;
     cursor: pointer;
@@ -65,12 +66,13 @@ export const NavLink = styled(Link)`
 export const NavLink2 = styled(Link)`
     color: #0404d4;
     // color: #fff;
-    display: flex;
+    display: block;
     align-items: center;
     font-family: 'Plaster', cursive;
-    font-size: 24px;
+    //font-size: 24px;
+    font-size: 1.29vw;
     text-decoration: none;
-    padding: 0rem 0.75rem;
+    padding: 0vw 0.51vw;
     height: 100%;
     cursor: pointer;
     zindex: 5200;
@@ -85,16 +87,16 @@ export const NavLink2 = styled(Link)`
 `;
 
 export const NavLink3 = styled(Link)`
-    color: white;
-    // color: #fff;
+    color: #0404d4;
     display: flex;
     align-items: center;
     font-family: 'Plaster', cursive;
-    font-size: 20px;
+    //font-size: 20px;
+    font-size: 1.2vw;
     text-decoration: none;
-    padding: 0.25rem 2rem;
-    height: 100%;
-    width: 100%;
+    //padding: 0.25rem 2rem;
+    //height: 100%;
+    //width: 100%;
     cursor: pointer;
     zindex: 5200;
 
@@ -109,12 +111,12 @@ export const NavLink3 = styled(Link)`
 
 export const NavMenu= styled.ul`
     list-style: none;
-    position: absolute;
+    position: relative;
     top: 0%;
-    left: 10%;
+    left: 20%;
     display: flex;
     align-items: center;
-    /* margin-right: -24px; */
+    text-align: center;
     zindex: 4200;
 
     @media screen and (max-width: 768px) {
@@ -123,17 +125,28 @@ export const NavMenu= styled.ul`
 `;
 
 
+export const NavMenuDiv= styled.div`
+    display: inline-block;
+    position: relative;
+    //width: 220px;
+    width: 70%;
+    align-items: center;
+    zindex: 4200;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
 export const NavMenu2= styled.ul`
     list-style: none;
-    position: absolute;
+    position: relative;
     margin: 0;
     padding: 0;
-    top: 0%;
-    left: 5%;
+    top: 35%;
+    //left: 5%;
     align-items: center;
     text-align: center;
-    width: 70%;
-    margin-right: 0rem;
     zindex: 4200;
 
     @media screen and (max-width: 768px) {
@@ -145,7 +158,7 @@ export const NavItem= styled.li`
     position: relative;
     display: inline-block;
     align-items: center;
-    height: 40px;
+    height: 4.8vw;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -156,7 +169,7 @@ export const NavItem2= styled.li`
     position: relative;
     display: inline-block;
     align-items: center;
-    height: 90px;
+    height: 1.8vw;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -167,11 +180,11 @@ export const SubNavItem2= styled.ul`
     list-style: none;
     position: absolute;
     margin: 0;
-    padding: 1rem 1rem;
+    padding: 0.25vw 0.25vw;
     display: inline-blockflex;
     background: lightgrey;
-    top: 90px;
-    width: 100%;
+    top: 1.75vw;
+    //width: 100%;
     align-items: center;
     text-align: center;
     margin: 0;
@@ -198,8 +211,8 @@ export const NavLinkTxt = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
+    padding: 0 0vw;
+    height: 4.8vw;
     cursor: pointer;
 `;
 
@@ -219,11 +232,12 @@ export const Bars= styled(FaBars)`
 `;
 
 export const NavLogo= styled.div`
-    position: absolute;
-    left: 0px;
+    position: relative;
+    display: inline-block;
+    //left: 0px;
     top: 1px;
-    width: 220px;
-    display: flex;
+    //width: 220px;
+    width: 12%;
     align-items: center;
     zindex: 4200;
 
@@ -234,13 +248,12 @@ export const NavLogo= styled.div`
 
 
 export const NavRight= styled.div`
-    position: absolute;
+    position: relative;
     top: 1px;
-    right: 0px;
-    width: 280px;
-    //display: flex;
+    //right: 0px;
+    //width: 280px;
+    width: 15%;
     align-items: center;
-    //margin-left: -24px;
     zindex: 4200;
 
     @media screen and (max-width: 768px) {
@@ -277,7 +290,8 @@ export const NavBtnLink = styled(Link)`
     background: #0404d4;
     padding: 0px 6px;
     font-family: 'Sriracha', cursive;
-    font-size: 20px;
+    //font-size: 20px;
+    font-size: 1.28vw;
     color: #fff;
     border: none;
     outline:none;
@@ -295,9 +309,10 @@ export const NavBtnLink = styled(Link)`
 export const NavBtnLink2 = styled(Link)`
     border--radius: 2px;
     background: #b80320;
-    padding: 6px 18px;
+    padding: 0.27vw 0.4vw;
     font-family: 'Plaster', cursive;
-    font-size: 20px;
+    //font-size: 20px;
+    font-size: 1.19vw;
     color: #fff;
     border: none;
     outline:none;
