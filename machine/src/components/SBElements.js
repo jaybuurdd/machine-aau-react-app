@@ -28,16 +28,28 @@ export const Nav2 = styled.div`
 
 export const Foot = styled.div`
     position: relative;
-    top: 60px;
+    //top: 60px;
     width: 100%;
     background: #0404d4;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1000px) / 3.25);
+    height: 9.6vw;
     zindex: 1000;
 `;
 
+
+export const FootDiv= styled.div`
+    position: relative;
+    display: block;
+    //width: 220px;
+    //width: 100%;
+    height: 3vw;
+    align-items: center;
+    align-text: center;
+    zindex: 4200;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
 
 
 export const NavLink = styled(Link)`
@@ -87,16 +99,15 @@ export const NavLink2 = styled(Link)`
 `;
 
 export const NavLink3 = styled(Link)`
-    color: #0404d4;
+    color: #fff;
     display: flex;
     align-items: center;
     font-family: 'Plaster', cursive;
     //font-size: 20px;
     font-size: 1.2vw;
     text-decoration: none;
-    //padding: 0.25rem 2rem;
-    //height: 100%;
-    //width: 100%;
+    padding: 0vw 0.51vw;
+    border-radius: 50%;
     cursor: pointer;
     zindex: 5200;
 
@@ -137,6 +148,7 @@ export const NavMenuDiv= styled.div`
         display: none;
     }
 `;
+
 
 export const NavMenu2= styled.ul`
     list-style: none;
@@ -199,6 +211,7 @@ export const NavItem3= styled.li`
     position: relative;
     display: inline-block;
     text-align: center;
+    height: 1.8vw;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -265,7 +278,7 @@ export const NavBtn = styled.li`
     position: relative;
     display: inline-block;
     align-items: center;
-    height: 40px;
+    height: 4vw;
     top: 5px;
 
     @media screen and (max-width: 768px) {
@@ -277,7 +290,19 @@ export const NavBtn2 = styled.li`
     position: relative;
     display: inline-block;
     align-items: center;
-    height: 90px;
+    height: 9vw;
+    width: 10%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavBtn3 = styled.li`
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    height: 9vw;
     width: 10%;
 
     @media screen and (max-width: 768px) {
