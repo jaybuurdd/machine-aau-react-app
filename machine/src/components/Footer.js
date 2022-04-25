@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import './Footer.css';
-import { Button } from './Button';
 import {Foot, FootDiv, NavMenu2, NavItem3, NavBtn3, NavBtnLink2, NavLink3} from './SBElements'
 
 
@@ -8,9 +7,6 @@ import {Foot, FootDiv, NavMenu2, NavItem3, NavBtn3, NavBtnLink2, NavLink3} from 
 
 function Footer() {
 
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
 
   return (
     <>

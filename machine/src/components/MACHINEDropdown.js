@@ -3,7 +3,6 @@ import React, { useState} from 'react';
 //import { Button } from './Button';
 //import { Link} from 'react-router-dom';
 import {NavItem3, SubNavItem2, NavLink3} from './SBElements';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './DropdownStyle.css'
 import MenuItems from './MACHINEMenu'
 
