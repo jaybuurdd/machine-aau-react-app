@@ -1,11 +1,18 @@
 //import React from 'react';
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
-import {Nav2, NavLink2, Bars, NavLogo, NavMenu2, NavItem2, NavRight, NavBtn2, NavBtnLink2} from './SBElements'
+import {Nav2, NavLink2, Bars, NavLogo, NavMenuDiv, NavMenu2, NavItem2, NavRight, NavBtn2, NavBtnLink2} from './SBElements'
 import MACHINEDropdown from './MACHINEDropdown'
 import TeamDropdown from './TeamDropdown'
 import { FaWindowRestore } from 'react-icons/fa';
 // import './NavBar.css'
+
+const AAUImg = {
+  maxWidth: '12.5vw',
+  height: 'auto',
+  //maxWidth: '82.7vw',
+  //zindex: '0',
+};
 
 const Navbar2 = ()  => {
 
@@ -75,6 +82,7 @@ const Navbar2 = ()  => {
         </NavLogo>
         <Bars></Bars>
         {/* <NavMenu2 className={click ? 'nav-menu active' : 'nav-menu'}> */}
+        <NavMenuDiv>
         <NavMenu2>
           <NavItem2 className='nav-item'>
             <NavLink2 to="/"  onClick={closeMobileMenu} activeStyle>HOME</NavLink2>
@@ -106,10 +114,11 @@ const Navbar2 = ()  => {
             <NavBtnLink2 to="./Donate">DONATE </NavBtnLink2>
           </NavBtn2>
         </NavMenu2>
+        </NavMenuDiv>
         <NavRight>
-        <NavLink2 to="/"  activeStyle>	
-                <img width="auto" height="90px" className="navbar-logo" src="/images/boys_girls-aau-basketball-logo_transparent.png"  alt="AAU logo" />
-            </NavLink2>
+          <NavLink2 to="/"  activeStyle>	
+            <img id="AAU-logo" src="/images/boys_girls-aau-basketball-logo_transparent.png"  alt="AAU logo" style={AAUImg}/>
+          </NavLink2>
         </NavRight>
       </Nav2>
     </>

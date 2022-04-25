@@ -19,7 +19,7 @@ const header1 = ({children }) => (
     align-items: center;
     text-align: center;
     font-family: 'Plaster', cursive;
-    font-size: 24px;
+    font-size: 2vw;
     text-decoration: none;
     zindex: 4200;
 
@@ -111,13 +111,14 @@ export const MACHINEH3C = styled.span`
 
 
 export const MACHINEMain = styled.div`
-    //position: relative;
-    top: 190px;
-    margin: 150px;
+    position: relative;
+    display: block;
+    //top: 190px;
+    margin: 200px;
     color: #0404d4;
     align-items: center;
     font-family: 'Sriracha', cursive;
-    font-size: 20px;
+    font-size: 1.2vw;
     text-decoration:
     //zindex: -200;
 

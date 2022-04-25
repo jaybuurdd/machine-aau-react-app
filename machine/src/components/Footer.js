@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-//import './Footer.css';
-import {Foot, NavMenu3, NavItem3, NavBtn2, NavBtnLink3, NavLink3} from './SBElements'
+import './Footer.css';
+import { Button } from './Button';
+import {Foot, FootDiv, NavMenu2, NavItem3, NavBtn3, NavBtnLink2, NavLink3} from './SBElements'
 
 const FooterContent = {
   width: '100%',
@@ -80,33 +81,31 @@ function Footer() {
   return (
     <>
     <Foot>
-        <div id='FooterContent' style={FooterContent}>
-          <div id='FooterIntro' style={FooterIntro}>
-            <div id='FooterIntroItem' style={FooterIntroItem}>Follow the MACHINE to receive updates on news, events, trainings, teams, try-outs, and more!</div>
-            <div  id='FooterIntroItem' style={FooterIntroItem}>
-              <NavBtn2 className='nav-item'>
-                <NavBtnLink3 to="./Subscribe">SUBSCRIBE</NavBtnLink3>
-              </NavBtn2>
-              {/* <Button buttonStyle='btn--outline'>Subscribe</Button> */}
-            </div>
-          </div>
-          <div id='FooterMenu' style={FooterMenu}>
-            <NavMenu3>
-              <NavItem3><NavLink3 to='/disclaimer'>Disclaimer</NavLink3></NavItem3>
-              <NavItem3><NavLink3 to='/terms-of-service'>Terms of Service</NavLink3></NavItem3>
-              <NavItem3><NavLink3 to='/privacy-policy'>Privacy Policy</NavLink3></NavItem3>
-              <NavBtn2 className='nav-item'>
-                <NavBtnLink3 to="./Donate">DONATE </NavBtnLink3>
-              </NavBtn2>
-            </NavMenu3>
-          </div>
-          <div id='FooterCopyright' style={FooterCopyright}>
-            <div  id='FooterCopyrightItem' style={FooterCopyrightItem}>&copy;Infinity 8 Basketball, Inc /dba MACHINE Basketball&#8480;  2020 </div>
-          </div>
-        </div>
+        <FootDiv>
+          <NavMenu2>
+            <NavItem3 style={{color: 'white', fontWeight: 'bold'}}>Follow the MACHINE to receive updates on news, events, trainings, teams, try-outs, and more!</NavItem3>
+            <NavBtn3><NavBtnLink2 to="./subscribe">Subscribe</NavBtnLink2></NavBtn3>
+          </NavMenu2>
+        </FootDiv>
+        <FootDiv>
+          <NavMenu2>
+            <NavItem3><NavLink3 to='/disclaimer'>Disclaimer</NavLink3></NavItem3>
+            <NavItem3><NavLink3 to='/terms-of-service'>Terms of Service</NavLink3></NavItem3>
+            <NavItem3><NavLink3 to='/privacy-policy'>Privacy Policy</NavLink3></NavItem3>
+            <NavItem3><NavLink3 to='/code-conduct'>Code of Conduct</NavLink3></NavItem3>
+            <NavBtn3><NavBtnLink2 to="./volunteer">VOLUNTEER</NavBtnLink2></NavBtn3>
+            <NavBtn3><NavBtnLink2 to="./donate">DONATE</NavBtnLink2></NavBtn3>
+          </NavMenu2>
+        </FootDiv>
+        <FootDiv>
+          <NavMenu2>
+            <NavItem3 style={{color: 'white', fontWeight: 'bold'}}><small>&copy; Copyright 2021, MACHINE Basketball.  All Rights Reserved</small></NavItem3>
+          </NavMenu2>
+        </FootDiv>
 
   </Foot>
-  </>
+
+    </>
 
   );
 }
