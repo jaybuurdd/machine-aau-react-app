@@ -23,7 +23,7 @@ export const Nav2 = styled.div`
     display: flex;
     justify-content: space-between;
     //padding: 0.5rem calc((100vw - 1000px) / 3.25);
-    zindex: 1000;
+    zindex: 1100;
 `;
 
 export const Foot = styled.div`
@@ -44,7 +44,7 @@ export const FootDiv= styled.div`
     height: 3vw;
     align-items: center;
     align-text: center;
-    zindex: 4200;
+    zindex: 1100;
 
     @media screen and (max-width: 768px) {
         display: none;
