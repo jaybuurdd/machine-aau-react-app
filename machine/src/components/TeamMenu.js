@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
-        title: 'Machine Team Offerings',
-        path: '/aboutus',
+        title: 'MACHINE Team Offerings',
+        path: '/MACHINE-Offerings',
         cName: 'dropdown-link'
 
     },

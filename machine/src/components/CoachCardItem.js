@@ -1,7 +1,9 @@
 import React from 'react';
+import Logo from './Logo';
+import {NavLogo2} from './SBElements';
 import {MACHINEH3B, MACHINEH3C} from './AppElements';
 
-const AlumCardContent = {
+const CoachCardContent = {
   display: 'inline-grid',
   maxWidth: '325px',
   width: '325px',
@@ -12,7 +14,7 @@ const AlumCardContent = {
   zindex: '0',
 };
 
-const AlumCard = {
+const CoachCard = {
   position: 'relative',
   background: '#fff',
   maxWidth: '325px',
@@ -25,19 +27,19 @@ const AlumCard = {
   zindex: 0,
 };
 
-const AlumDiv = {
+const CoachDiv = {
   maxHeight: '360px',
   zindex: 0,
 };
 
-const AlumImg = {
+const CoachImg = {
   width: '280px',
   height: '340px',
   margin: '20px',
   zindex: 0,
 };
 
-const AlumInfo = {
+const CoachInfo = {
   position: 'relative',
   //padding: '0px 20px 0px',
   justifyContent: 'center',
@@ -45,15 +47,16 @@ const AlumInfo = {
 };
 
 
-function AlumCardItem(props) {
+function CoachCardItem(props) {
   return (
     <>
-    <div id='AlumCardContent' style={AlumCardContent}>
-      <div id='AlumCard' style={AlumCard}>
-        <div id='AlumImg' style={AlumDiv}><img alt={props.Player} src={props.ImgLoc} style={AlumImg}/></div>
-        <div id='AlumInfo' style={AlumInfo}>
-          <MACHINEH3B>{props.Player}</MACHINEH3B>
-          <MACHINEH3C>{props.School}</MACHINEH3C>
+    <div id='CoachCardContent' style={CoachCardContent}>
+      <div id='CoachCard' style={CoachCard}>
+        <NavLogo2><Logo /></NavLogo2>
+        <div id='CoachImg' style={CoachDiv}><img alt={props.Coach} src={props.ImgLoc} style={CoachImg}/></div>
+        <div id='CoachInfo' style={CoachInfo}>
+          <MACHINEH3B>{props.Coach}</MACHINEH3B>
+          <MACHINEH3C>{props.Team}</MACHINEH3C>
         </div>
       </div>
     </div>
@@ -61,4 +64,4 @@ function AlumCardItem(props) {
   );
 }
 
-export default AlumCardItem;
+export default CoachCardItem;

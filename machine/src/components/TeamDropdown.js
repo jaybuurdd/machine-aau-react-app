@@ -2,8 +2,8 @@
 import React, { useState} from 'react';
 //import { Button } from './Button';
 //import { Link, NavLink } from 'react-router-dom';
-import {NavItem3, SubNavItem2, NavLink3} from './SBElements';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {SubNavItem3, SubNavItem2B, NavLink4} from './SBElements';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './DropdownStyle.css'
 import MenuItems from './TeamMenu'
 
@@ -15,17 +15,17 @@ function TeamDropdown() {
 
     return (
         <>
-            <SubNavItem2 /* onClick={handleClick} classname='dropdown-menu' */>
+            <SubNavItem2B /* onClick={handleClick} classname='dropdown-menu' */>
                 {MenuItems.map((item, index) => {
                     return (
-                        <NavItem3 key={index}>
-                            <NavLink3 className={item.cName} to={item.path} onClick={() => setClick(false)}>
+                        <SubNavItem3 key={index}>
+                            <NavLink4 className={item.cName} to={item.path} onClick={() => setClick(false)}>
                                 {item.title}
-                            </NavLink3>
-                        </NavItem3>
+                            </NavLink4>
+                        </SubNavItem3>
                     )
                 })}
-            </SubNavItem2>
+            </SubNavItem2B>
         </>
 
     );
