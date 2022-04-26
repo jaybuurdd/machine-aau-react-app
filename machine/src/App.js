@@ -31,9 +31,9 @@ function App() {
   return (
     <>
       <Router>
-        <SocialBar/>
+        <SocialBar id="Social Bar"/>
         <NavBar3 />
-        <MACHINEMain>
+        <MACHINEMain id="MACHINEMain">
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/about-us' component={AboutUs} />

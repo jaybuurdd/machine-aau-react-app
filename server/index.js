@@ -11,7 +11,8 @@ const champRouter = require('./routes/championships')
 app.use("/championships", champRouter);
 const AlumRouter = require('./routes/alumnae')
 app.use("/alumnae", AlumRouter);
-
+const CoachRouter = require('./routes/coaches')
+app.use("/coaches", CoachRouter);
 
 
 /* const db = mysql.createConnection({

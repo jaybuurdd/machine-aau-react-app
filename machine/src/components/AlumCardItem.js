@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import {MACHINEH3B, MACHINEH3C} from './AppElements';
 
 const AlumCardContent = {

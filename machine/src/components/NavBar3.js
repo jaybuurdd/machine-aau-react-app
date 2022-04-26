@@ -1,9 +1,9 @@
 //import React from 'react';
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
-import {Nav2, NavLink2, Bars, NavLogo, NavMenuDiv, NavMenu2, NavItem2, NavRight, NavBtn2, NavBtnLink2} from './SBElements'
-import MACHINEDropdown from './MACHINEDropdown'
-import TeamDropdown from './TeamDropdown'
+import {Nav2, NavLink2, Bars, NavLogo, NavMenuDiv, NavMenu2, NavItem2, NavRight, NavBtn2, NavBtnLink2} from './SBElements';
+import MACHINEDropdown from './MACHINEDropdown';
+import TeamDropdown from './TeamDropdown';
 import { FaWindowRestore } from 'react-icons/fa';
 // import './NavBar.css'
 
@@ -55,8 +55,6 @@ const Navbar2 = ()  => {
       setDropdown2(false)
     }
   };
-
-
 
   const showButton = () => {
     if (window.innerWidth <= 960) {

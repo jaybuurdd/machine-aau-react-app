@@ -38,7 +38,7 @@ export const MACHINEH2 = styled(header2)`
     align-items: left;
     text-align: left;
     font-family: 'Plaster', cursive;
-    font-size: 20px;
+    font-size: 1.85vw;
     text-decoration: none;
     zindex: 4200;
 
@@ -52,7 +52,7 @@ export const MACHINEH2_CTR = styled(header2)`
     align-items: center;
     text-align: center;
     font-family: 'Plaster', cursive;
-    font-size: 20px;
+    font-size: 1.85vw;
     text-decoration: none;
     zindex: 4200;
 
@@ -70,7 +70,7 @@ export const MACHINEH3 = styled(header3)`
     align-items: left;
     text-align: left;
     font-family: 'Plaster', cursive;
-    font-size: 18px;
+    font-size: 1.75vw;
     text-decoration: underline;
     zindex: 1000;
 
@@ -85,7 +85,7 @@ export const MACHINEH3B = styled.span`
     align-items: center;
     text-align: center;
     font-family: 'Sriracha', cursive;
-    font-size: 22px;
+    font-size: 2.1vw;
     font-weight: bold;
     zindex: 1000;
 
@@ -100,7 +100,7 @@ export const MACHINEH3C = styled.span`
     align-items: center;
     text-align: center;
     font-family: 'Sriracha', cursive;
-    font-size: 16px;
+    font-size: 1.6vw;
     font-weight: bold;
     zindex: 1000;
 
@@ -113,33 +113,41 @@ export const MACHINEH3C = styled.span`
 export const MACHINEMain = styled.div`
     position: relative;
     display: block;
-    top: 4.5vw;
-    margin: 200px;
+    //top: 190px;
+    width: 90%;
+    top: 5vw;
+    margin: 6.5vw;
     color: #0404d4;
-    align-items: center;
+    //align-items: center;
     font-family: 'Sriracha', cursive;
     font-size: 1.2vw;
-    zindex: -200;
+    text-decoration: none;
+    z-index: -5;
 
     @media screen and (max-width: 768px) {
         display: none;
     }
 `;
 
+export const ALink = styled.a`
+    color: #0404d4;
+    font-family: 'Sriracha', cursive;
+    font-size: 0.9vw;
+    font-weight: bold;
+    text-decoration: underline;
+`;
+
+
 export const CardGrid = styled.div`
     display: inline-grid;
 `;
 
-export const pagelist = styled.ul`
+export const PageList = styled.ul`
     list-style: none;
     position: absolute;
     margin: 0;
-    padding: 1rem 1rem;
-    display: inline-blockflex;
     width: 100%;
-    align-items: left;
     text-align: left;
-    margin: 0;
     padding: 0;
 
     @media screen and (max-width: 768px) {

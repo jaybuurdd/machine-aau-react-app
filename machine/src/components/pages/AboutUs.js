@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import {MACHINEH1, MACHINEH2, pagelist} from '../AppElements';
-import {NavItem2, NavLink2} from '../SBElements';
+import {MACHINEH1, MACHINEH2, PageList, ALink} from '../AppElements';
 
 const pstyle = {
     textalign: 'justify',
@@ -25,12 +24,13 @@ function AboutUs(){
 <img class="wp-image-3536 aligncenter" src="http://www.themachine.pro/basketball/wp-content/uploads/2016/07/girlsBasketballDrill3-300x240.jpg" alt="" width="303" height="236" />
 <img class="wp-image-3540 aligncenter" src="http://www.themachine.pro/basketball/wp-content/uploads/2016/07/IMG_5766-300x155.jpg" alt="" width="381" height="197" />
 
-<pagelist>
- 	<li><a style = {{color: '0404d4'}} href="/philosophy">OUR PHILOSOPHY</a></li>
+<PageList>
+ 	<li><ALink to="/philosophy">OUR PHILOSOPHY</ALink>{/* <a style = {{color: '0404d4'}} href="/philosophy">OUR PHILOSOPHY</a> */}</li>
  	<li><a href="/success">SUCCESS</a></li>
  	<li><a href="/collegiate-network">COLLEGIATE NETWORK</a></li>
  	<li><a href="/our-coaches">OUR COACHES</a></li>
-</pagelist>
+</PageList>
+
  <div id="philosophy">
 <MACHINEH2 style={center}><strong>OUR PHILOSOPHY</strong></MACHINEH2>
 <p style={pstyle}>In 1999 Dan Allen volunteered with Northern Virginia youth sports as a coach and trainer. He and his staff quickly realized that there was very little development for the players in various sports when it came to skills, conditioning, strength and discipline. Coaches were coaching to win at the expense of player development. The sad reality is that the coaches and their teams typically ended with low-skill players, poor performing teams, and more loses than wins. On top of this, players and parents simply walked away from the experience frustrated and disenchanted.</p>

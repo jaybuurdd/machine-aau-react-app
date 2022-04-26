@@ -28,7 +28,7 @@ const CardGrid = {
     alignItems: 'stretch',
     width: '100%',
     justifyContent: 'center',
-    alignItems: 'center',
+    //alignItems: 'center',
     margin: '0',
     padding: '0',
     boxSizing: 'border-box',

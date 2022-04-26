@@ -23,7 +23,7 @@ export const Nav2 = styled.div`
     display: flex;
     justify-content: space-between;
     //padding: 0.5rem calc((100vw - 1000px) / 3.25);
-    zindex: 1000;
+    zindex: 1100;
 `;
 
 export const Foot = styled.div`
@@ -44,7 +44,7 @@ export const FootDiv= styled.div`
     height: 3vw;
     align-items: center;
     align-text: center;
-    zindex: 4200;
+    zindex: 1100;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -108,6 +108,28 @@ export const NavLink3 = styled(Link)`
     text-decoration: none;
     padding: 0vw 0.51vw;
     border-radius: 50%;
+    cursor: pointer;
+    zindex: 5200;
+
+    &.active {
+        color: #15cdfc;
+    }
+
+    &:hover {
+        background: #5cabff;
+    }
+`;
+
+
+export const NavLink4 = styled(Link)`
+    color: #0404d4;
+    display: flex;
+    align-items: center;
+    font-family: 'Plaster', cursive;
+    //font-size: 20px;
+    font-size: 1.2vw;
+    text-decoration: none;
+    padding: 0vw 0.51vw;
     cursor: pointer;
     zindex: 5200;
 
@@ -208,14 +230,40 @@ export const SubNavItem2= styled.ul`
     list-style: none;
     position: absolute;
     margin: 0;
-    padding: 0.25vw 0.25vw;
-    display: inline-blockflex;
+    //padding: 0.25vw 0.25vw;
+    //display: inline-blockflex;
+    display: block;
+    flex-direction: column;
+    //justify-content: space-around;
+    white-space: nowrap;
     background: lightgrey;
     top: 1.75vw;
     //width: 100%;
     align-items: center;
     text-align: center;
+    padding: 0;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const SubNavItem2B= styled.ul`
+    list-style: none;
+    position: absolute;
     margin: 0;
+    //padding: 0.25vw 0.25vw;
+    //display: inline-blockflex;
+    display: block;
+    flex-direction: column;
+    //justify-content: space-around;
+    white-space: nowrap;
+    background: lightgrey;
+    left: -50%;
+    top: 1.75vw;
+    //width: 100%;
+    align-items: center;
+    text-align: center;
     padding: 0;
 
     @media screen and (max-width: 768px) {
@@ -233,6 +281,20 @@ export const NavItem3= styled.li`
         display: none;
     }
 `;
+
+export const SubNavItem3= styled.li`
+    position: relative;
+    display: block;
+    //flex-grow: 1;
+    text-align: center;
+    item-align: center;
+    height: 1.8vw;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
 
 export const NavLinkTxt = styled(Link)`
     color: #0404d4;
@@ -267,6 +329,21 @@ export const NavLogo= styled.div`
     top: 1px;
     //width: 220px;
     width: 12%;
+    align-items: center;
+    zindex: 4200;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavLogo2= styled.div`
+    position: relative;
+    display: block;
+    //left: 0px;
+    top: 1px;
+    //width: 220px;
+    width: 6%;
     align-items: center;
     zindex: 4200;
 
