@@ -25,6 +25,7 @@ import MACHINELilBallers from './components/pages/MACHINE_LiL_Ballers';
 import MACHINETrain from './components/pages/MACHINE_Train';
 import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import TermsOfService from './components/pages/TermsOfService';
+import CodeOfConduct from './components/pages/CodeOfConduct';
 import Disclaimer from './components/pages/Disclaimer';
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
             <Route path='/sponsors' component={Sponsors} />
             <Route path='/privacy-policy' component={PrivacyPolicy} />
             <Route path='/terms-of-service' component={TermsOfService} />
+            <Route path='/code-conduct' component={CodeOfConduct} />
             <Route path='/disclaimer' component={Disclaimer} />
           </Switch>
         </MACHINEMain>
