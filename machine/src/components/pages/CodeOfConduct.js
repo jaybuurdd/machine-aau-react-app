@@ -5,7 +5,7 @@ import {MACHINEH1, MACHINEH2} from '../AppElements';
 function CodeOfConduct() {
     return (
         <>
-            <h1>Infinity 8, LLC</h1>
+            <h1>Infinity 8 Basketball, Inc.</h1>
             <h1>DBA</h1>
             <h1>MACHINE Basketball</h1>
             <h1>Codes of Conduct</h1>
@@ -15,22 +15,29 @@ function CodeOfConduct() {
             of the DC Metropolitan. Offering programs in various sports for boys
             and girls.</p>
 
-            <h2>Mission Statement</h2>
+            <h2>Contents</h2>
+           <ul>
+                <b><li><h3><a href='#Mission Statement'>Mission Statement</a></h3></li></b>
+                <b><li><h3><a href='#Guiding Principles'>Guiding Principles</a></h3></li></b>
+                <b><li><h3><a href='#CodePurpose'>Purpose of Code of Conduct</a></h3></li></b>
+                <b><li><h3><a href='#PlayerCode'>Players Code of Conduct</a></h3></li></b>
+                <b><li><h3><a href='#CoachCode'>Coaches Code of Conduct</a></h3></li></b>
+                <b><li><h3><a href='#ParentCode'>Parents and Spectators Code of Conduct</a></h3></li></b>
+            </ul>
 
-
-            <p>MACHINE's mission is to broaden young people's skills, character, and
+            <h2 id="Mission Statement">Mission Statement</h2>
+            <p>MACHINE's mission is to broaden young people's character, skills, and
             knowledge and inspire interest in learning and leadership using
             sports as the catalyst. MACHINE is dedicated to the support of the organized sports in the Fairfax
-            County, Alexandria City, and other surrounding areas of the DC
-            Metropolitan.  MACHINE believes that our mission is to provide these
-            organized sports with as many athletes as possible, that are as well
-            prepared as possible for that next level.</p>
+            County, Prince William County, Fairfax City, Alexandria City, and other surrounding areas of the DC
+            Metropolitan.  MACHINE believes that our mission is to provide organized sports to as many athletes as possible, giving
+            young athletes the skills, character development to compete at the Varsity High School, Collegiate and beyond levels.</p>
 
-            <h2>Guiding Principles</h2>
+            <h2 id="Guiding Principles">Guiding Principles</h2>
             <ol type="1">
                 <li>Purpose</li>
                     <p>These principles are written to ensure a balanced blend of sportsmanship,
-                    recreation, skill development, and competitive activity in keeping
+                    character development, skill development, physical development, and competitive activity in keeping
                     with the MACHINE Mission Statement.&nbsp;</p>
                 <li>Principles</li>
                     <ol type="a">
@@ -45,13 +52,11 @@ function CodeOfConduct() {
                             <li><p>MACHINE has a goal of continuous improvement. As deviations from our mission are noted, we will look for the underlying problem and make the necessary adjustments to ensure that
                                     we are living up to the standards and goals of our Mission Statement.</p></li>
                     </ol>
-                
             </ol>
-
-{/*             <br/>
+            <br/>
             <h2>Code of Conduct</h2>
             <ol type="1">
-                <li>Purpose</li>
+                <li id="CodePurpose">Purpose</li>
                     <p>MACHINE values sportsmanship, fair play, skill development, and mutual
                     respect among all players, coaches, officials and spectators.&nbsp;
                     This Code of Conduct has been established and adopted to ensure the
@@ -60,7 +65,7 @@ function CodeOfConduct() {
 
                     <p>This Code of Conduct applies to all sports and activities associated with
                     MACHINE.  These activities include, but are not limited to, signup
-                    sessions, drafts, practices, MACHINE sponsored games, and any
+                    sessions, tryouts, practices, trainings, clinics, camps, MACHINE sponsored games, and any
                     activities, attended under the MACHINE banner, run by other
                     organizations.</p>
 
@@ -70,7 +75,7 @@ function CodeOfConduct() {
                     will be available on the MACHINE website for review.</p> 
                 
                     <p>The following codes of conduct will be strictly enforced.</p>
-                <li>Players Code of Conduct</li>
+                <b><li id="PlayerCode">Players Code of Conduct</li></b>
                     <p>Each player will ensure that his/her playing conduct is that of a young
                     lady or gentleman fairly competing to the limit of his/her ability.
                     To satisfactorily meet these responsibilities, the player is expected
@@ -86,7 +91,7 @@ function CodeOfConduct() {
                         <li>Attend every practice and game that is reasonably possible and notify the coach in advance if the player is unable to attend.</li>
                     </ol>
             <br/>
-                <li>Coaches Code of Conduct</li>
+                <b><li id="CoachCode">Coaches Code of Conduct</li></b>
                     <p>The Head Coach will be provided with copies of the Code of Conduct prior
                     to the start of the season.  Each Head Coach is responsible to see
                     that their assistant coaches, players, and spectators abide by the
@@ -111,8 +116,8 @@ function CodeOfConduct() {
                         <li>Instruct team support personnel in their responsibilities in accordance with established rules and procedures.</li>
                         <li>Realize, accept, and practice the principle that a team's reputation is built not only on its playing ability, but also on itssportsmanship, courtesy, and manner.</li>
                     </ol>
-
-                <li>Parents and Spectators Code of Conduct</li>
+                <br/>
+                <b><li id="ParentCode">Parents and Spectators Code of Conduct</li></b>
                     <p>Each parent and spectator will ensure that his/her conduct is that of 
                     responsible adult or youth who are positively encouraging all
                     participants to the limit of his/her ability. &nbsp;To satisfactorily
@@ -132,7 +137,8 @@ function CodeOfConduct() {
                         <li>Demonstrate appropriate gestures of sportsmanship at the conclusion of a game, win or lose.</li>
                         <li>Do not interact in a negative fashion with fans, players or coaches of the opposing team or game officials.</li>
                         <li>Realize, accept, and practice the principle that a team's reputation is built not only on its playing ability, but also on the sportsmanship, courtesy, and citizenship of its fans.</li>
-                    </ol>           */}
+                    </ol>
+            </ol>
         
         </>
    

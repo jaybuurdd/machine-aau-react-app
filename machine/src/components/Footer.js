@@ -85,10 +85,10 @@ function Footer() {
         </FootDiv>
         <FootDiv>
           <NavMenu2>
+            <NavItem3><NavLink3 to='/code-conduct'>Code of Conduct</NavLink3></NavItem3>
             <NavItem3><NavLink3 to='/disclaimer'>Disclaimer</NavLink3></NavItem3>
             <NavItem3><NavLink3 to='/terms-of-service'>Terms of Service</NavLink3></NavItem3>
             <NavItem3><NavLink3 to='/privacy-policy'>Privacy Policy</NavLink3></NavItem3>
-            <NavItem3><NavLink3 to='/code-conduct'>Code of Conduct</NavLink3></NavItem3>
             <NavBtn3><NavBtnLink2 to="./volunteer">VOLUNTEER</NavBtnLink2></NavBtn3>
             <NavBtn3><NavBtnLink2 to="./donate">DONATE</NavBtnLink2></NavBtn3>
           </NavMenu2>

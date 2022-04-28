@@ -44,7 +44,7 @@ function App() {
             <Route path='/success' component={Success} />
             <Route path='/placements' component={Placements} />
             <Route path='/collegiate-network' component={CollegiateNet} />
-            <Route path='/events' component={Events} />
+            //<Route path='/events' component={Events} />
             <Route path='/news' component={News} />
             <Route path='/usjn' component={USJN} />
             <Route path='/MACHINE-Teams' component={MACHINETeams} />

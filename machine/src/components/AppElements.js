@@ -1,14 +1,5 @@
 import styled from 'styled-components';
-
-
-const center = {
-    textalign: 'center',
-};
-
-const left = {
-    textalign: 'left'
-};
-
+import { HashLink } from 'react-router-hash-link';
 
 const header1 = ({children }) => (
     <h1>{children}</h1>
@@ -19,7 +10,8 @@ const header1 = ({children }) => (
     align-items: center;
     text-align: center;
     font-family: 'Plaster', cursive;
-    font-size: 2vw;
+    font-size: 3.5vw;
+    padding: 0;
     text-decoration: none;
     zindex: 4200;
 
@@ -129,14 +121,48 @@ export const MACHINEMain = styled.div`
     }
 `;
 
+export const MACHINEInline1 = styled.div`
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: 6.5vw;
+    //align-items: center;
+    z-index: -5;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const MACHINEInline2 = styled.div`
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    margin: 6.5vw;
+    align-text: left;
+    z-index: -5;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+
 export const ALink = styled.a`
     color: #0404d4;
     font-family: 'Sriracha', cursive;
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     font-weight: bold;
     text-decoration: underline;
 `;
 
+export const ALink2 = styled(HashLink)`
+    color: #0404d4;
+    font-family: 'Sriracha', cursive;
+    font-size: 1.1vw;
+    font-weight: bold;
+    text-decoration: underline;
+`;
 
 export const CardGrid = styled.div`
     display: inline-grid;
