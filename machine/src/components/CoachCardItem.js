@@ -1,12 +1,12 @@
 import React from 'react';
-import Logo from './Logo';
+import SMLogo from './SMLogo';
 import {NavLogo2} from './SBElements';
 import {MACHINEH3B, MACHINEH3C} from './AppElements';
 
 const CoachCardContent = {
   display: 'inline-grid',
-  maxWidth: '325px',
-  width: '325px',
+  maxWidth: '425px',
+  width: '425px',
   justifyContent: 'center',
   alignItems: 'center',
   flexWrap: 'wrap',
@@ -17,8 +17,8 @@ const CoachCardContent = {
 const CoachCard = {
   position: 'relative',
   background: '#fff',
-  maxWidth: '325px',
-  width: '325px',
+  maxWidth: '395px',
+  width: '395px',
   height: 'auto',
   margin: '25px',
   boxShadow: '10px 25px 25px rgb(1 1 1 / 20%)',
@@ -33,8 +33,8 @@ const CoachDiv = {
 };
 
 const CoachImg = {
-  width: '280px',
-  height: '340px',
+  width: '240px',
+  height: '300px',
   margin: '20px',
   zindex: 0,
 };
@@ -44,6 +44,7 @@ const CoachInfo = {
   //padding: '0px 20px 0px',
   justifyContent: 'center',
   alignItems: 'center',
+  height: '5vw',
 };
 
 
@@ -52,8 +53,8 @@ function CoachCardItem(props) {
     <>
     <div id='CoachCardContent' style={CoachCardContent}>
       <div id='CoachCard' style={CoachCard}>
-        <NavLogo2><Logo /></NavLogo2>
-        <div id='CoachImg' style={CoachDiv}><img alt={props.Coach} src={props.ImgLoc} style={CoachImg}/></div>
+        <NavLogo2><SMLogo /></NavLogo2>
+        <div id='CoachImg' /* style={CoachDiv} */><img alt={props.Coach} src={props.ImgLoc} style={CoachImg}/></div>
         <div id='CoachInfo' style={CoachInfo}>
           <MACHINEH3B>{props.Coach}</MACHINEH3B>
           <MACHINEH3C>{props.Team}</MACHINEH3C>

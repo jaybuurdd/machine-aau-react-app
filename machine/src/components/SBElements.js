@@ -343,7 +343,8 @@ export const NavLogo2= styled.div`
     //left: 0px;
     top: 1px;
     //width: 220px;
-    width: 6%;
+    //width: 3vw;
+    height: 3.8vw;
     align-items: center;
     zindex: 4200;
 

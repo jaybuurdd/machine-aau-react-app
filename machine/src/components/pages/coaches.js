@@ -53,7 +53,7 @@ function Coaches() {
             <div id='CardGrid' style={CardGrid}>
                     {listOfCoaches.map((value, key) => {
                         return (
-                            <CoachCardItem Player={value.Player} ImgLoc={value.ImgLoc} School={value.School}>
+                            <CoachCardItem id={value.id} Coach={value.Coach} Team={value.Team} ImgLoc={value.ImgLoc}>
                             </CoachCardItem>
                         )
                     }
