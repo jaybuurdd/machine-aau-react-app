@@ -10,7 +10,7 @@ import AboutUs from './components/pages/AboutUs';
 import Philosophy from './components/pages/philosophy';
 //import Alumnae from './components/pages/Alumnae';
 import Alumnae from './components/pages/alumnae2';
-import OurCoaches from './components/pages/coaches';
+import Coaches from './components/pages/coaches';
 import Success from './components/pages/success';
 import Placements from './components/pages/placements';
 import CollegiateNet from './components/pages/collegiate_network';
@@ -39,7 +39,7 @@ function App() {
             <Route path='/about-us' component={AboutUs} />
             <Route path='/philosophy' component={Philosophy} />
             <Route path='/alumnae' component={Alumnae} />
-            <Route path='/our-coaches' component={OurCoaches}/>
+            <Route path='/coaches' component={Coaches}/>
             <Route path='/success' component={Success} />
             <Route path='/placements' component={Placements} />
             <Route path='/collegiate-network' component={CollegiateNet} />
