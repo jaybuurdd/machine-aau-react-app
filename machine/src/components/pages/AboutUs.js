@@ -1,4 +1,7 @@
 import React from 'react';
+import {NavLink2} from '../SBElements';
+//import { NavHashLink as ALink2 } from 'react-router-hash-link';
+import {use} from 'react-router-dom';
 import '../../App.css';
 import {MACHINEH1, MACHINEH2, PageList, ALink, ALink2} from '../AppElements';
 
@@ -30,8 +33,6 @@ const left = {
     textalign: 'left'
 };
 
-
-
 function AboutUs(){
     return (
     <>
@@ -40,11 +41,11 @@ function AboutUs(){
     <MACHINEH1>ABOUT MACHINE</MACHINEH1>
     <MACHINEH2>Contents</MACHINEH2>
             <ul style={{listStyle: "none"}}>
-                <li><b><ALink2 to="/AboutUs#MACHINEWhoWeAre">What Is MACHINE</ALink2></b></li>
-                <li><b><ALink2 to="/AboutUs#MACHINEOurHistory">MACHINE History</ALink2></b></li>
-                <li><b><ALink2 to="/AboutUs#MACHINEMissionStatement">MACHINE Mission Statement</ALink2></b></li>
-                <li><b><ALink2 to="/AboutUs#MACHINECoreValues">MACHINE Core Values</ALink2></b></li>
-                <li><b><ALink2 to="/AboutUs#MACHINEDifference">What Makes MACHINE Different</ALink2></b></li>
+                <li><ALink2 /* component={RouterLink} */ to="/#MACHINEWhoWeAre">What Is MACHINE</ALink2></li>
+                <li><ALink2 /* component={RouterLink} */ to="/#MACHINEOurHistory">MACHINE History</ALink2></li>
+                <li><ALink2 /* component={RouterLink} */ to="/AboutUs#MACHINEMissionStatement">MACHINE Mission Statement</ALink2></li>
+                <li><ALink2 /* component={RouterLink} */ to="/AboutUs#MACHINECoreValues">MACHINE Core Values</ALink2></li>
+                <li><ALink2 /* component={RouterLink} */ to="/AboutUs#MACHINEDifference">What Makes MACHINE Different</ALink2></li>
             </ul>
 
     <MACHINEH2 id="MACHINEWhoWeAre">What Is MACHINE</MACHINEH2>
@@ -59,7 +60,7 @@ function AboutUs(){
                 lack of focus on individual character and skill development. The collection of coaches served and developed relationships with Lee District Basketball Association (LDBA), 
                 Springfield/South County Youth Club(SYC), and Cardinal Basketball(Alexandria VA). Led by Dan Allen, the organization achieved great team success (see "Our Success" link below) and player 
                 development success (see "Our Alumnae" link below) at the local, regional, and national level.  MACHINE was formally organized in 2015 after the closing of Cardianal Basketball in 2014.
-                MACHINE has consistently focused on the development of local athletes REGARDLESS of skill level, talent, or size, RATHER their desire to work hard, DELIBERATELY train and become GREAT!!!</p>
+                MACHINE has consistently focused on the development of local athletes REGARDLESS of skill level, talent, or size, RATHER their desire to work hard, DELIBERATELY train, and become GREAT!!!</p>
                 
     <MACHINEH2 id="MACHINEMissionStatement">MACHINE Mission Statement</MACHINEH2>
                 <p>MACHINE's mission is to broaden young people's character, skills, and
