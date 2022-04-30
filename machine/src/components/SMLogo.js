@@ -2,16 +2,16 @@ import React from 'react';
 
 
 const LogoImg = {
-    maxWidth: '8vw',
+    maxWidth: '7.5vw',
     height: 'auto',
-    marginLeft: '30%',
+    //maxWidth: '82.7vw',
     //zindex: '0',
   };
 
 const SMLogo = ()  => {
     return (
         <>
-            <img style={LogoImg} src="/images/logos/MACHINE_Basketball_Red Bluelogo web2.png"  alt="MACHINE Basketball" />
+            <img style={LogoImg} src="/images/MACHINE_Basketball_Red Bluelogo web2.png"  alt="MACHINE Basketball" />
         </>
     );
 };
