@@ -1,9 +1,10 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SocialBar from './components/SocialBar';
 import NavBar3 from './components/NavBar3';
 import {MACHINEMain} from './components/AppElements';
 import Footer from './components/Footer';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import './App.css';
 import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
 import Philosophy from './components/pages/philosophy';
@@ -26,7 +27,6 @@ import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import TermsOfService from './components/pages/TermsOfService';
 import CodeOfConduct from './components/pages/CodeOfConduct';
 import Disclaimer from './components/pages/Disclaimer';
-import ErrorPage from './components/pages/PageNotFound';
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
             <Route path='/success' component={Success} />
             <Route path='/placements' component={Placements} />
             <Route path='/collegiate-network' component={CollegiateNet} />
-            <Route path='/events' component={Events} />
+            //<Route path='/events' component={Events} />
             <Route path='/news' component={News} />
             <Route path='/usjn' component={USJN} />
             <Route path='/MACHINE-Teams' component={MACHINETeams} />
@@ -57,7 +57,6 @@ function App() {
             <Route path='/terms-of-service' component={TermsOfService} />
             <Route path='/code-conduct' component={CodeOfConduct} />
             <Route path='/disclaimer' component={Disclaimer} />
-            <Route path="*"  component={ErrorPage} />
           </Switch>
         </MACHINEMain>
 
