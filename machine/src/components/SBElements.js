@@ -127,7 +127,7 @@ export const NavLink4 = styled(Link)`
     align-items: center;
     font-family: 'Plaster', cursive;
     //font-size: 20px;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     text-decoration: none;
     padding: 0vw 0.51vw;
     cursor: pointer;
@@ -345,6 +345,22 @@ export const NavLogo2= styled.div`
     //width: 220px;
     //width: 3vw;
     height: 3.8vw;
+    align-items: center;
+    zindex: 4200;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavLogo3= styled.div`
+    position: relative;
+    display: block;
+    //left: 0px;
+    top: 1px;
+    //width: 220px;
+    //width: 3vw;
+    height: 4vw;
     align-items: center;
     zindex: 4200;
 

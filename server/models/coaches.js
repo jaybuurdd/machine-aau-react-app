@@ -14,6 +14,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
+        Team2: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
         BioContent: {
             type: DataTypes.STRING,
             allowNull: false,
