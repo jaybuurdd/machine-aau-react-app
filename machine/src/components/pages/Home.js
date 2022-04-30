@@ -2,11 +2,12 @@ import React from 'react';
 import Box from '@material-ui/core/Box';
 
 import '../../App.css';
+import Cards from '../Cards';
 import Footer from '../Footer';
 import Slideshow from '../Slideshow/Slideshow';
 import MachineSection from '../MachineSection';
 import '../../components/Slideshow/Slideshow.css';
-import boxBg from '../../assets/basketball-court-texture.jpg';
+import boxBg from '../../assets/basketball-court-texture.jpg'
 
 function Home() {
   return (
@@ -31,6 +32,8 @@ function Home() {
           ]}
         />
         </Box>
+      <Cards />
+      <Footer />
     </>
   );
 }

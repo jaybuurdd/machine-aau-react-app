@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+<<<<<<< HEAD
 import {MACHINEH1, MACHINEH2, PageList, ALink, ALink2} from '../AppElements';
 
 const IntroImg = {
@@ -89,3 +90,9 @@ function AboutUs(){
 };
 
 export default AboutUs;
+=======
+
+export default function AboutUs(){
+    return <h1 className="about-us">ABOUT US</h1>
+}
+>>>>>>> parent of c792319 (first commit)

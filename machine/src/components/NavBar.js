@@ -28,9 +28,9 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <img width="auto" height="85px" className="navbar-logo" src="/images/Machine_Basketball RED _wht (Quicken Expanded Italic).png"  alt="MACHINE Basketball" />
+            THE MACHINE
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <img width="auto" height="90px" className="navbar-logo" src="/images/MACHINE_Elite_Red web.png"  alt="logo" />
+          <img width="auto" height="53px" className="navbar-logo" src="/images/machinepro.png"  alt="logo" />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
