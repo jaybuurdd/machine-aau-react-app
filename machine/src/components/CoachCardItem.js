@@ -1,41 +1,62 @@
 import React from 'react';
 import SMLogo from './SMLogo';
-import {NavLogo2} from './SBElements';
-import {MACHINEH3B, MACHINEH3C} from './AppElements';
+import {NavLogo3} from './SBElements';
+import {MACHINEH4B, MACHINEH4C} from './AppElements';
 
 const CoachCardContent = {
   display: 'inline-grid',
-  maxWidth: '425px',
-  width: '425px',
+  maxWidth: '21vw',
+  width: '21vw',
   justifyContent: 'center',
   alignItems: 'center',
   flexWrap: 'wrap',
-  margin: '30px',
+  margin: '1.5vw',
   zindex: '0',
 };
 
 const CoachCard = {
   position: 'relative',
-  background: '#fff',
-  maxWidth: '395px',
-  width: '395px',
+  background: '#c3d8e0',
+  //background: '#fff',
+  maxWidth: '20vw',
+  width: '20vw',
   height: 'auto',
-  margin: '25px',
-  boxShadow: '10px 25px 25px rgb(1 1 1 / 20%)',
-  borderRadius: '10px',
+  margin: '1vw',
+  boxShadow: '2vw 3vw 3vw rgb(1 1 1 / 20%)',
+  borderRadius: '3vw',
   overflow: 'hidden',
   zindex: 0,
 };
 
+const TeamDiv = {
+  display: 'block',
+  width: '100%',
+  marginLeft: '0%',
+  alignItems: 'center',
+  //maxWidth: '15.5vw',
+  //height: 'auto',
+};
+
+const TeamImg = {
+  display: 'block',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  width: '40%',
+  //maxWidth: '15.5vw',
+  //height: 'auto',
+};
+
 const CoachDiv = {
-  maxHeight: '360px',
+  maxHeight: '19.5vw',
   zindex: 0,
 };
 
 const CoachImg = {
-  width: '240px',
-  height: '300px',
-  margin: '20px',
+  width: '16vw',
+  height: '20vw',
+  //marginLeft: 'auto',
+  //marginRight: 'auto',
+  margin: '1.9vw',
   zindex: 0,
 };
 
@@ -44,7 +65,7 @@ const CoachInfo = {
   //padding: '0px 20px 0px',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '5vw',
+  height: '8vw',
 };
 
 
@@ -53,11 +74,12 @@ function CoachCardItem(props) {
     <>
     <div id='CoachCardContent' style={CoachCardContent}>
       <div id='CoachCard' style={CoachCard}>
-        <NavLogo2><SMLogo /></NavLogo2>
+        <NavLogo3 id='TeamLogo' style={TeamDiv}><SMLogo style={TeamImg} /></NavLogo3>
         <div id='CoachImg' /* style={CoachDiv} */><img alt={props.Coach} src={props.ImgLoc} style={CoachImg}/></div>
         <div id='CoachInfo' style={CoachInfo}>
-          <MACHINEH3B>{props.Coach}</MACHINEH3B>
-          <MACHINEH3C>{props.Team}</MACHINEH3C>
+          <MACHINEH4B>{props.Coach}</MACHINEH4B>
+          <MACHINEH4C>{props.Team}</MACHINEH4C>
+          <MACHINEH4C>{props.Team2}</MACHINEH4C>
         </div>
       </div>
     </div>
