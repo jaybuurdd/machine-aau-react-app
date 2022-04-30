@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import {Link } from 'react-router-dom';
-import {HashLink} from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 const header1 = ({children }) => (
     <h1>{children}</h1>
@@ -102,36 +101,6 @@ export const MACHINEH3C = styled.span`
     }
 `;
 
-export const MACHINEH4B = styled.span`
-    display: block;
-    color: #0404d4;
-    align-items: center;
-    text-align: center;
-    font-family: 'Sriracha', cursive;
-    font-size: 1.9vw;
-    font-weight: bold;
-    zindex: 1000;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`;
-
-export const MACHINEH4C = styled.span`
-    display: block;
-    color: #0404d4;
-    align-items: center;
-    text-align: center;
-    font-family: 'Sriracha', cursive;
-    font-size: 1.4vw;
-    font-weight: bold;
-    zindex: 1000;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`;
-
 
 export const MACHINEMain = styled.div`
     position: relative;
@@ -179,13 +148,12 @@ export const MACHINEInline2 = styled.div`
 `;
 
 
-export const ALink = styled(Link)`
+export const ALink = styled.a`
     color: #0404d4;
     font-family: 'Sriracha', cursive;
     font-size: 1.1vw;
     font-weight: bold;
     text-decoration: underline;
-    cursor: pointer;
 `;
 
 export const ALink2 = styled(HashLink)`
@@ -194,7 +162,6 @@ export const ALink2 = styled(HashLink)`
     font-size: 1.1vw;
     font-weight: bold;
     text-decoration: underline;
-    cursor: pointer;
 `;
 
 export const CardGrid = styled.div`
